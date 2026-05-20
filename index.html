@@ -1,9 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Test Site</title>
+    <meta charset="UTF-8">
+    <title>Emulator</title>
+    <style>
+        body {
+            margin: 0;
+            background: black;
+        }
+        #game {
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
 </head>
 <body>
-  <h1>It works</h1>
+
+<div id="game"></div>
+
+<script>
+    EJS_player = "#game";
+    EJS_core = "gba"; 
+    EJS_pathtodata = "https://cdn.emulatorjs.org/stable/data/";
+    EJS_gameUrl = "PASTE_DIRECT_ROM_LINK_HERE";
+</script>
+
+<script src="https://cdn.emulatorjs.org/stable/data/loader.js"></script>
+
 </body>
 </html>
